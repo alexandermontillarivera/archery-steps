@@ -26,6 +26,9 @@ export default function RootLayout({
 
   return (
     <html lang="es">
+      <head>
+        <link rel="shortcut icon" href="/logo.svg" type="image/svg" />
+      </head>
       <body className={stylesFonts.join(" ")}>
         {children}
         <Analytics />
