@@ -5,57 +5,32 @@ const steps = [
     number: "01",
     name: "Parada",
     image: "/photos/preparacion.jpg",
-    description: ""
+    description: "La parada es el primer paso fundamental en la técnica básica del tiro con arco. Consiste en adoptar una posición estable y equilibrada, con los pies separados a la anchura de los hombros y el cuerpo alineado hacia el objetivo. Esta postura proporciona una base sólida para ejecutar los siguientes pasos de manera efectiva."
   },
   {
     number: "02",
-    name: "Colocacion de la Flecha (Nocking)",
-    description:
-      "Coloca la flecha en el reposaflechas y engancha el culatín en la cuerda en el punto de montaje. Asegúrate de que las plumas esten orientadas correctamente. Los dedos deben sujetar la cuerda con un agarre relajado pero seguro.",
-    image: "/images/nocking.jpg",
+    name: "Agarre de cuerda y arco",
+    image: "/photos/pronacion.jpg",
+    description: "El agarre de la cuerda y el arco es crucial para garantizar un tiro preciso. La mano que sostiene la cuerda debe hacerlo con un agarre firme pero relajado, utilizando los dedos indice, medio y anular para sujetar la cuerda. La mano que sostiene el arco debe mantener un agarre estable, con los dedos envueltos alrededor del mango del arco, asegurando que el arco esté alineado correctamente con el objetivo."
   },
   {
     number: "03",
-    name: "Agarre del Arco (Grip)",
-    description:
-      "El arco debe descansar en la base del pulgar, en el área carnosa de la mano. La muñeca permanece baja y relajada. Los dedos no deben agarrar el arco; simplemente lo sostienen. Un agarre correcto evita la torsion del arco al soltar.",
-    image: "/images/grip.jpg",
+    name: "Elevación y mirar el objetivo",
+    image: "/photos/elevacion.jpg",
+    description: "La elevación implica levantar el arco hacia el objetivo, asegurándose de mantener una postura estable y controlada. Al mismo tiempo, es fundamental dirigir la mirada hacia el objetivo, enfocándose en el punto de impacto deseado. Esta combinación de elevación y enfoque visual ayuda a mejorar la precisión del tiro."
   },
   {
     number: "04",
-    name: "Tension (Draw)",
-    description:
-      "Eleva el arco hacia el objetivo mientras comienzas a tensar la cuerda. El brazo del arco debe extenderse completamente, con el codo ligeramente rotado hacia afuera. Usa los musculos de la espalda para realizar la tension, no solo el brazo.",
-    image: "/images/draw.jpg",
+    name: "Halar y anclaje",
+    image: "/photos/anclaje.jpg",
+    description: "El halar consiste en tirar de la cuerda hacia atrás, utilizando los músculos de la espalda y los brazos para generar la fuerza necesaria para el disparo. El anclaje es el punto debajo del mentón donde la mano que sostiene la cuerda se posiciona de manera consistente en cada tiro."
   },
   {
     number: "05",
-    name: "Anclaje (Anchor)",
-    description:
-      "Lleva la mano de la cuerda a un punto de referencia consistente en tu rostro. Tipicamente, los dedos tocan el menton y la mandibula, mientras la cuerda roza la nariz y los labios. Este punto debe ser identico en cada disparo.",
-    image: "/images/anchor.jpg",
-  },
-  {
-    number: "06",
-    name: "Apuntado (Aiming)",
-    description:
-      "Alinea el visor con el centro del objetivo. Mantén ambos ojos abiertos si es posible. El ojo dominante debe mirar a traves del visor. Respira de manera controlada y mantén el foco mientras continuas expandiendo con los musculos de la espalda.",
-    image: "/images/aim.jpg",
-  },
-  {
-    number: "07",
-    name: "Liberacion (Release)",
-    description:
-      "La liberacion debe ser una continuación natural de la expansion. Los dedos se abren relajadamente, permitiendo que la cuerda escape. No tires de la cuerda hacia atras ni empujes hacia adelante. La pronacion del brazo del arco debe ser natural.",
-    image: "/images/release.jpg",
-  },
-  {
-    number: "08",
-    name: "Seguimiento (Follow-through)",
-    description:
-      "Mantén la posicion despues de soltar. El brazo del arco permanece extendido, la mano de la cuerda se relaja hacia atras naturalmente. Observa el vuelo de la flecha hasta que impacte. Un buen seguimiento indica una ejecucion correcta.",
-    image: "/images/follow-through.jpg",
-  },
+    name: "Liberación",
+    image: "/photos/liberacion.jpg",
+    description: "La liberación es el momento en que se suelta la cuerda para disparar la flecha hacia el objetivo. Aquí se hace un movimiento suave y controlado de la mano que sostiene la cuerda hacia atrás y abriendo los dedos para liberar la cuerda."
+  }
 ]
 
 export function TechniqueSteps() {
@@ -67,11 +42,11 @@ export function TechniqueSteps() {
             Paso a Paso
           </p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance">
-            La Secuencia del Tiro Olimpico
+            Técnica Básica
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Cada fase del tiro es crucial para lograr precision y consistencia.
-            Domina cada paso antes de avanzar al siguiente.
+            A continuación, se presentan los pasos fundamentales para ejecutar la técnica básica del tiro con arco.
+            Cada paso es crucial para garantizar una ejecución precisa y efectiva.
           </p>
         </div>
 
@@ -83,7 +58,7 @@ export function TechniqueSteps() {
                 } items-center`}
             >
               <div className="w-full lg:w-1/2">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-card">
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-card">
                   <Image
                     src={step.image}
                     alt={step.name}

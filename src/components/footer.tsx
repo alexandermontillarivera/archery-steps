@@ -21,17 +21,15 @@ export function Footer() {
               <circle cx="12" cy="12" r="2" />
             </svg>
             <span className="text-xl font-bold text-foreground">
-              Arqueria Olimpica
+              Tiro con Arco
             </span>
           </div>
 
           <p className="text-muted-foreground text-sm text-center">
-            Tecnica y precision en cada disparo. Aprende de los mejores.
+            Presentación de la técnica básica de tiro con arco.
           </p>
 
-          <p className="text-muted-foreground text-sm">
-            2026. Todos los derechos reservados.
-          </p>
+
         </div>
       </div>
     </footer>
